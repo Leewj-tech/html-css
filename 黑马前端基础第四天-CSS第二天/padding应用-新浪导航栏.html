@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav {
+            /*先设置盒子高度和背景颜色*/
+            height: 41px;
+            background-color: #fcfcfc;
+            border-top: 3px solid #ff8500;
+            border-bottom: 1px solid #edeef0;
+            line-height: 41px;
+        }
+
+        .nav a {
+            font-size: 12px;
+            color: #4c4c4c;
+            text-decoration: none;
+            display: inline-block;
+            /*转换成行内块元素之后 需要设置高度宽度了
+            但宽度不用设置，我们为了美观，用padding把行内块元素撑开*/
+            height: 41px;
+            padding: 0 20px;
+
+        }
+
+        .nav a:hover {
+            color: #ff8500;
+            background-color: #eee;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <a href="#">新浪导航</a>
+        <a href="#">手机新浪网</a>
+        <a href="#">移动客户端</a>
+        <a href="#">微博</a>
+        <a href="#">三个字</a>
+    </div>
+</body>
+
+</html>
